@@ -51,7 +51,7 @@ quarto use template <github-organization>/roboticslab-slides
 Ejemplo:
 
 ```bash
-quarto use template SergioJacobo/roboticslab-slides
+quarto use template SJacoboZavaleta/roboticslab-slides
 ```
 
 Luego entra en la carpeta generada y renderiza:
