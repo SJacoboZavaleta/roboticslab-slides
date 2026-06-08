@@ -1,16 +1,617 @@
 ---
-title: Untitled
 format:
   roboticslab-slides-revealjs: default
-author: SJacoboZavaleta
-date: last-modified
 ---
 
-## Introduction
+## Cover {.rl-cover .rl-cover-dark .rl-logos-compact footer=false}
 
-*TODO* Create an example file that demonstrates the formatting and features of your format.
+::: {.rl-cover-top}
+::: {.rl-event}
+International Symposium / Conference Name · City · Date
+:::
 
-## More Information
+::: {.rl-cover-logos}
+![](assets/logos/RBVLogo.png){.rl-logo}
+![](assets/logos/uc3m_logo.svg){.rl-logo}
+![](assets/logos/Roboticslab.svg){.rl-logo}
+![](assets/logos/Logotipo_del_Ministerio_de_Universidades.svg){.rl-logo .rl-logo-wide}
+:::
 
-You can learn more about controlling the appearance of RevealJS output here: <https://quarto.org/docs/presentations/revealjs/>
+:::
 
+::: {.rl-cover-main}
+::: {.rl-cover-label}
+RoboticsLab Slides
+:::
+
+::: {.rl-kicker}
+Symposium contribution
+:::
+
+::: {.rl-paper-title}
+Your Technical Paper Title Goes Here
+:::
+
+::: {.rl-authors}
+Author One · Author Two · Author Three · Author Four
+:::
+
+::: {.rl-affiliation}
+Department / Laboratory · University or Research Institution
+:::
+:::
+
+::: {.rl-cover-bottom}
+Project name · Research group · Funding or event note
+:::
+
+## Template overview {.rl-bg-light}
+
+### What this template includes
+
+- Manual cover and closing slides
+- Normal slides with color variants
+- Big centered title slides
+- Split 30/70 slides
+- Animated SVG background slides
+- Inline color, highlight and underline utilities
+
+Use this file as a [visual catalogue]{.rl-mark-yellow} of the available slide styles.
+
+## Slide grammar {.rl-bg-pearl}
+
+### Use only `##` for real slides
+
+- `## Title` → normal slide
+- `## Title {.rl-bg-light}` → light slide
+- `## Title {.rl-big-title .rl-bg-navy .rl-word-aqua}` → big centered title
+- `## Title {.rl-split-30-70 .rl-dark}` → split slide
+- `## Title {.theme-title1}` → animated SVG title slide
+- `## Cover {.rl-cover ...}` → cover or closing slide
+
+## COVER VARIANTS {.rl-big-title .rl-bg-navy .rl-word-aqua}
+
+### Optional cover styles
+
+<!-- ## Cover, light variant {.rl-cover .rl-cover-light .rl-logos-compact background-image="_extensions/roboticslab-slides/backgrounds/cover-srar.svg" background-size="cover" background-position="center" footer=false}
+
+::: {.rl-cover-top}
+::: {.rl-event}
+Light cover variant · Optional when the background is bright
+:::
+
+::: {.rl-cover-logos}
+![](assets/logos/uc3m_logo.svg){.rl-logo}
+![](assets/logos/RBVLogo.png){.rl-logo}
+![](assets/logos/Roboticslab.svg){.rl-logo}
+:::
+:::
+
+::: {.rl-cover-main}
+::: {.rl-cover-label}
+RoboticsLab Slides
+:::
+
+::: {.rl-kicker}
+Light cover
+:::
+
+::: {.rl-paper-title}
+A Cleaner Cover for Bright Backgrounds
+:::
+
+::: {.rl-authors}
+Presenter name · Coauthors
+:::
+
+::: {.rl-affiliation}
+Institution · Laboratory
+:::
+:::
+
+::: {.rl-cover-bottom}
+Use `.rl-cover-light` when your background is pale or white
+::: -->
+
+
+<!-- ## Cover with image background {.rl-cover .rl-cover-dark .rl-logos-compact background-image="_extensions/roboticslab-slides/backgrounds/cover-srar.svg" background-size="cover" background-position="center" footer=false}
+
+::: {.rl-cover-top}
+::: {.rl-event}
+International Symposium / Conference Name · City · Date
+:::
+
+::: {.rl-cover-logos}
+![](assets/logos/uc3m_logo2_vector.svg){.rl-logo}
+![](assets/logos/RBVLogo.png){.rl-logo}
+![](assets/logos/RoboticslabLogo.png){.rl-logo}
+:::
+:::
+
+::: {.rl-cover-main}
+::: {.rl-cover-label}
+Optional background image
+:::
+
+::: {.rl-kicker}
+Oral presentation
+:::
+
+::: {.rl-paper-title}
+Technical Presentation with a Custom Background
+:::
+
+::: {.rl-authors}
+Presenter name · Coauthors
+:::
+
+::: {.rl-affiliation}
+Institution · Laboratory
+:::
+:::
+
+::: {.rl-cover-bottom}
+Use QMD `background-image` for one-off covers
+::: -->
+
+
+## Cover, light variant {.rl-cover .rl-cover-light .rl-bg-teal .rl-logos-compact footer=false}
+
+::: {.rl-cover-top}
+::: {.rl-event}
+Light cover variant · Optional when the background is bright
+:::
+
+::: {.rl-cover-logos}
+![](assets/logos/RBVLogo.png){.rl-logo}
+![](assets/logos/uc3m_logo.svg){.rl-logo}
+![](assets/logos/Roboticslab.svg){.rl-logo}
+![](assets/logos/Logotipo_del_Ministerio_de_Universidades.svg){.rl-logo .rl-logo-wide}
+:::
+:::
+
+::: {.rl-cover-main}
+::: {.rl-cover-label}
+Light mode
+:::
+
+::: {.rl-kicker}
+Technical presentation
+:::
+
+::: {.rl-paper-title}
+A Cleaner Cover for Bright Backgrounds
+:::
+
+::: {.rl-authors}
+Presenter name · Coauthors
+:::
+
+::: {.rl-affiliation}
+Institution · Laboratory
+:::
+:::
+
+::: {.rl-cover-bottom}
+Use `.rl-cover-light` when your background is pale or white
+:::
+
+
+## Template overview {.rl-bg-light}
+
+### What this template includes
+
+- Manual cover and closing slides
+- Normal slides with color variants
+- Big centered title slides
+- Split 30/70 slides
+- Animated SVG background slides
+- Inline color, highlight and underline utilities
+
+Use this file as a [visual catalogue]{.rl-mark-yellow} of the available slide styles.
+
+
+## Slide grammar {.rl-bg-pearl}
+
+### Use only `##` for real slides
+
+- `## Title` → normal slide
+- `## Title {.rl-bg-light}` → normal light slide
+- `## Title {.rl-bg-teal}` → soft aqua slide
+- `## Title {.rl-bg-navy}` → dark high-contrast slide
+- `## Title {.rl-big-title .rl-bg-navy .rl-word-aqua}` → big centered title
+- `## Title {.rl-split-30-70 .rl-dark}` → split slide
+- `## Title {.theme-title1}` → animated SVG title slide
+- `## Cover {.rl-cover ...}` → cover or closing slide
+
+Do not use `#` headings in this template. Use `###` and `####` only inside slides.
+
+
+## BIG TITLE SLIDES {.rl-big-title .rl-bg-navy .rl-word-aqua}
+
+### For transitions, sections and memorable moments
+
+
+## METHODS {.rl-big-title .rl-bg-dark .rl-word-gold .rl-big-xl}
+
+### Large title using the gold accent
+
+
+## RESULTS {.rl-big-title .rl-bg-light .rl-word-petrol .rl-big-xl}
+
+### Light background with strong dark word
+
+
+## TAKEAWAYS {.rl-big-title .rl-bg-gold .rl-word-ink}
+
+### Warm accent slide for final messages
+
+
+## Default dark slide
+
+### Default slide style
+
+This is the default normal slide. It uses the [petrol brand color]{.rl-text-aqua .rl-bold} as background and light text.
+
+- Use this for standard explanations.
+- Keep the content short.
+- Use highlights only when needed.
+
+The [main contribution]{.rl-mark-yellow} can be highlighted, while [technical terms]{.rl-text-gold .rl-bold} can use color.
+
+
+## Light slide example {.rl-bg-light}
+
+### Clean academic background
+
+#### Smaller subtitle
+
+This variant is useful for dense technical content, figures, tables or diagrams.
+
+The [main idea]{.rl-mark-cyan} is easy to emphasize. You can also use [rose text]{.rl-text-rose .rl-bold}, [orange text]{.rl-text-orange}, or [underlined concepts]{.rl-u-petrol .rl-bold}.
+
+
+## Aqua slide {.rl-bg-teal}
+
+### Soft scientific background
+
+This is useful for biomedical, rehabilitation or soft robotics sections.
+
+The controller achieved [safe tracking]{.rl-u-aqua .rl-bold} without [thermal saturation]{.rl-mark-pink}.
+
+You can combine:
+
+- [highlight yellow]{.rl-mark-yellow}
+- [highlight pink]{.rl-mark-pink}
+- [highlight green]{.rl-mark-green}
+- [highlight purple]{.rl-mark-purple}
+
+
+## Pearl gray slide {.rl-bg-pearl}
+
+### Neutral, calm and readable
+
+Use this background when a pure white slide feels too bright but a colored slide feels too strong.
+
+A [soft marker]{.rl-mark-cyan} and a [gold underline]{.rl-u-gold .rl-bold} work well here.
+
+
+## Navy slide {.rl-bg-navy}
+
+### High contrast slide
+
+Use this for important messages or short technical summaries.
+
+- [Aqua]{.rl-text-aqua .rl-bold} works well on navy.
+- [Gold]{.rl-text-gold .rl-bold} works well for key numbers.
+- [Rose]{.rl-text-rose} adds contrast.
+
+> Blockquotes also adapt to the slide color system.
+
+
+## Gold slide {.rl-bg-gold}
+
+### Warm accent for conclusions
+
+Use this slide sparingly, for one key idea, conclusion or memorable statement.
+
+The [final takeaway]{.rl-mark-yellow .rl-bold} should be short and clear.
+
+
+## Inline utilities {.rl-bg-light}
+
+### Text colors, highlights and underlines
+
+This template includes several inline classes:
+
+- [Petrol text]{.rl-text-petrol}
+- [Aqua text]{.rl-text-aqua}
+- [Blue text]{.rl-text-blue}
+- [Gold text]{.rl-text-gold}
+- [Orange text]{.rl-text-orange}
+- [Rose text]{.rl-text-rose}
+- [Coral text]{.rl-text-coral}
+- [Green text]{.rl-text-green}
+- [Violet text]{.rl-text-violet}
+
+You can write [bold colored text]{.rl-text-rose .rl-bold}, [highlighted results]{.rl-mark-yellow}, or [underlined key ideas]{.rl-u-aqua .rl-bold}.
+
+
+## Code and equations {.rl-bg-light}
+
+### Example with code
+
+```{r, echo=TRUE}
+model <- lm(mpg ~ disp, data = mtcars)
+summary(model)
+```
+
+Inline code such as `u_pid[k]` uses the slide code color.
+
+You can also write mathematical content:
+
+$$
+e[k] = r[k] - y[k]
+$$
+
+
+## 30/70 split, dark right {.rl-split-30-70 .rl-dark}
+
+- Left panel: slide title
+- Right panel: main content
+- Useful for concept explanation
+- Works well with bullets, quotes and code
+
+This layout is good when the title should behave like a visual anchor.
+
+> The right side can contain the real technical explanation.
+
+
+## 30/70 split, light right {.rl-split-30-70 .rl-light}
+
+- Dark petrol left panel
+- Pale aqua right panel
+- Good for readable technical explanations
+- Suitable for short paragraphs and lists
+
+The [important concept]{.rl-mark-yellow} can be highlighted inside the content area.
+
+
+## 30/70 split, teal style {.rl-split-30-70 .rl-teal}
+
+- Stronger RoboticsLab identity
+- Good for system overview
+- Good for architecture slides
+- Good for paper contribution slides
+
+Use this slide when you want something more distinctive than a normal slide.
+
+
+## 30/70 split, navy style {.rl-split-30-70 .rl-navy}
+
+- Light left panel
+- Dark right panel
+- Good for dramatic contrasts
+- Useful for a key result or final concept
+
+The [gold accent]{.rl-text-gold .rl-bold} works well on the dark side.
+
+
+## Animated title background 1 {.theme-title1 .rl-up}
+
+### Use for section openings
+
+
+## Animated title background 2 {.theme-title2 .rl-theme-light}
+
+### Another centered title background
+
+
+## Animated section background 1 {.theme-section1}
+
+### Text and code example
+
+This slide uses an animated SVG background and reserves content space on the left.
+
+```{r, echo=TRUE}
+plot(cars)
+```
+
+
+## Animated section background 2 {.theme-section2}
+
+### Subtitle
+
+This style is useful for section transitions or short explanations.
+
+Quarto enables you to combine text, figures, code and custom visual layouts.
+
+
+## Animated section background 3 {.theme-section3}
+
+### Another subtitle
+
+This variant places the content further to the right.
+
+Use it when the visual background has stronger elements on the left.
+
+
+## Generic animated slide 1 {.theme-slide1}
+
+### Normal slide with custom SVG background
+
+This slide uses a full-slide animated SVG background.
+
+
+## Generic animated slide 2 {.theme-slide2}
+
+### Left-offset content
+
+This variant shifts content to avoid visual elements in the background.
+
+- Item one
+- Item two
+- Item three
+
+
+## Generic animated slide 3 {.theme-slide3}
+
+### Another left-offset content slide
+
+Use these variants when a specific background image requires a custom content position.
+
+
+## Generic animated slide 4 {.theme-slide4}
+
+### Top-offset title
+
+This variant moves the title down slightly.
+
+
+## Generic animated slide 5 {.theme-slide5}
+
+### Small left offset
+
+This variant uses a smaller left offset.
+
+
+## Generic animated slide 6 {.theme-slide6}
+
+### Small left offset
+
+Suitable for backgrounds with mild visual elements.
+
+
+## Generic animated slide 7 {.theme-slide7}
+
+### Top-offset title
+
+Use for visual transition slides.
+
+
+## Generic animated slide 8 {.theme-slide8}
+
+### Top-offset title
+
+Another visual slide variant.
+
+
+## Custom QMD background {.rl-bg-light background-image="_extensions/roboticslab-slides/backgrounds/cover-srar.svg" background-size="cover" background-position="center"}
+
+### Per-slide background image
+
+This shows how to attach a one-off background image from the QMD heading.
+
+Use this only when a specific presentation needs a unique visual background.
+
+
+## Recommended slide sequence {.rl-bg-light}
+
+### Suggested structure for a 5–6 minute conference talk
+
+1. Cover
+2. Motivation
+3. Problem
+4. Proposed idea
+5. System architecture
+6. Control strategy
+7. Experimental setup
+8. Main results
+9. Takeaways
+10. Closing
+
+Use only a few highly visual slides. Keep most technical slides clean.
+
+
+## Closing {.rl-cover .rl-cover-closing .rl-cover-dark .rl-logos-compact background-image="_extensions/roboticslab-slides/backgrounds/cover-srar.svg" background-size="cover" background-position="center" footer=false}
+
+::: {.rl-cover-top}
+::: {.rl-event}
+International Symposium / Conference Name · City
+:::
+
+::: {.rl-cover-logos}
+![](assets/logos/RBVLogo.png){.rl-logo}
+![](assets/logos/uc3m_logo.svg){.rl-logo}
+![](assets/logos/Roboticslab.svg){.rl-logo}
+![](assets/logos/Logotipo_del_Ministerio_de_Universidades.svg){.rl-logo .rl-logo-wide}
+:::
+:::
+
+::: {.rl-cover-main}
+::: {.rl-closing-thanks}
+Thank you
+:::
+
+::: {.rl-kicker}
+Discussion
+:::
+
+::: {.rl-paper-title}
+Questions?
+:::
+
+::: {.rl-authors}
+Your Technical Paper Title Goes Here
+:::
+
+::: {.rl-affiliation}
+Presenter name · Institution · contact@email.com
+:::
+:::
+
+::: {.rl-cover-bottom}
+Project name · Research group · Contact / repository
+:::
+
+<!-- ## Closing {.rl-cover .rl-cover-closing .rl-cover-dark .rl-logos-compact background-image="_extensions/roboticslab-slides/backgrounds/cover-srar.svg" background-size="cover" background-position="center" footer=false}
+
+::: {.rl-cover-top}
+::: {.rl-event}
+International Symposium / Conference Name · City
+:::
+
+::: {.rl-cover-logos}
+![](assets/logos/RBVLogo.png){.rl-logo}
+![](assets/logos/uc3m_logo.svg){.rl-logo}
+![](assets/logos/Roboticslab.svg){.rl-logo}
+![](assets/logos/Logotipo_del_Ministerio_de_Universidades.svg){.rl-logo .rl-logo-wide}
+:::
+:::
+
+::: {.rl-cover-main}
+::: {.rl-big-title}
+Thank you
+:::
+
+::: {.rl-kicker}
+Discussion
+:::
+
+::: {.rl-paper-title}
+Questions?
+:::
+
+::: {.rl-authors}
+Your Technical Paper Title Goes Here
+:::
+
+::: {.rl-affiliation}
+Presenter name · Institution · contact@email.com
+:::
+:::
+
+::: {.rl-cover-bottom}
+Project name · Research group · Contact / repository
+::: -->
+
+
+<!--
+RoboticsLab Slides template catalogue
+
+Stable grammar:
+- Use only ## for real slides.
+- Do not use # headings in this template.
+- Use ### and #### only inside a slide.
+- Cover and closing are also ## slides with .rl-cover.
+-->

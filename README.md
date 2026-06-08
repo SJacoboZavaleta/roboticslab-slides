@@ -1,23 +1,48 @@
-# <%= title %> Format
+# RoboticsLab Slides Template
 
-## Installing
+Plantilla Quarto / Markdown para presentaciones de congresos internacionales, simposios, presentaciones de papers, charlas técnicas cortas y resultados experimentales.
 
-*TODO*: Replace the `<github-organization>` with your GitHub organization.
+Esta plantilla está pensada para presentaciones de Robótica, Automatización y Bioingeniería afiliadas al RoboticsLab de la Universidad Carlos III de Madrid.
+
+## Qué incluye
+
+- `template.qmd`: plantilla base para diapositivas Quarto
+- `template.html`: layout personalizado para presentaciones
+- `_extensions/`: complementos de Reveal.js y soporte de Quarto
+- `assets/`: logos, fondos y figuras para la presentación
+- `template_files/`: dependencias y recursos de Quarto
+
+## Instalación
+
+Reemplaza `<github-organization>` con tu organización o usuario de GitHub:
 
 ```bash
-quarto use template <github-organization>/<%= filesafename %>
+quarto use template <github-organization>/roboticslab-slides
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your article.
+## Uso
 
-## Using
+1. Copia `template.qmd` como punto de partida.
+2. Edita los metadatos `title`, `author`, `date` y el resto del contenido.
+3. Añade secciones específicas para:
+   - congresos internacionales
+   - simposios
+   - presentaciones de papers
+   - charlas técnicas cortas
+   - resultados experimentales
+   - robótica, automatización y bioingeniería
+4. Renderiza la presentación con:
 
-*TODO*: Describe how to use your format.
+```bash
+quarto render template.qmd
+```
 
-## Format Options
+## Personalización
 
-*TODO*: If your format has options that can be set via document metadata, describe them.
+- Ajusta colores, fuentes y estilo en `custom.scss`.
+- Añade gráficos, tablas y resultados experimentales en `assets/figures`.
+- Modifica `template.html` si quieres cambiar la estructura o el diseño.
 
-## Example
+## Licencia
 
-Here is the source code for a minimal sample document: [example.qmd](example.qmd).
+Esta plantilla se distribuye bajo la licencia MIT. Consulta `LICENSE` para más detalles.

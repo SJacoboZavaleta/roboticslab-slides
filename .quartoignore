@@ -1,0 +1,21 @@
+# Quarto ignore patterns for local build and output artifacts
+.Rproj.user/
+.quarto/
+.quarto-cache/
+*_cache/
+
+# Rendered files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+*.ipynb
+
+# System files
+.DS_Store
+Thumbs.db
