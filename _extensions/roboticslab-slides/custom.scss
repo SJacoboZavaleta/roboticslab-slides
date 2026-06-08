@@ -152,7 +152,6 @@ div.sourceCode {
    ## .theme-title1 {.theme-title1}
    ## .theme-title2 {.theme-title2}
    ## Slide title {.theme-section1}
-   Inside _extensions/roboticslab-slides/assets/backgrounds
    ========================================================= */
 
 /* =========================================================
@@ -227,14 +226,28 @@ div.sourceCode {
   --rl-theme-link-color: #{$rl-petrol};
 }
 
+/* =========================================================
+   Template asset path
+   ---------------------------------------------------------
+   These paths point to the root-level assets folder copied by
+   `quarto use template`.
+
+   The compiled RevealJS theme CSS is generated inside:
+   *_files/libs/revealjs/dist/theme/
+
+   Therefore ../../../../../ returns to the project root.
+   ========================================================= */
+
+$rl-template-assets-path: "../../../../../assets/backgrounds" !default;
+
 /* Adding images to theme title slides */
 .theme-title1:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/dark/roboticslab_cover_dark_orbit_flow_v3.svg");
+  background-image: url("#{$rl-template-assets-path}/dark/roboticslab_cover_dark_orbit_flow_v3.svg");
   @include background-full;
 }
 
 .theme-title2:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/light/roboticslab_cover_light_curves2.png");
+  background-image: url("#{$rl-template-assets-path}/light/roboticslab_cover_light_curves2.png");
   @include background-full;
 }
 
@@ -306,17 +319,17 @@ div.sourceCode {
 
 /* Adding images to section slides background-image*/
 .theme-section1:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/section1.svg");
+  background-image: url("#{$rl-template-assets-path}/section1.svg");
   @include background-full;
 }
 
 .theme-section2:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/section2.svg");
+  background-image: url("#{$rl-template-assets-path}/section2.svg");
   @include background-full;
 }
 
 .theme-section3:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/section3.svg");
+  background-image: url("#{$rl-template-assets-path}/section3.svg");
   @include background-full;
 }
 
@@ -392,42 +405,42 @@ div.sourceCode {
 
 /* Adding images to generic slides */
 .theme-slide1:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/slide1.svg");
+  background-image: url("#{$rl-template-assets-path}/slide1.svg");
   @include background-full;
 }
 
 .theme-slide2:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/slide2.svg");
+  background-image: url("#{$rl-template-assets-path}/slide2.svg");
   @include background-full;
 }
 
 .theme-slide3:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/slide3.svg");
+  background-image: url("#{$rl-template-assets-path}/slide3.svg");
   @include background-full;
 }
 
 .theme-slide4:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/slide4.svg");
+  background-image: url("#{$rl-template-assets-path}/slide4.svg");
   @include background-full;
 }
 
 .theme-slide5:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/slide5.svg");
+  background-image: url("#{$rl-template-assets-path}/slide5.svg");
   @include background-full;
 }
 
 .theme-slide6:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/slide6.svg");
+  background-image: url("#{$rl-template-assets-path}/slide6.svg");
   @include background-full;
 }
 
 .theme-slide7:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/slide7.svg");
+  background-image: url("#{$rl-template-assets-path}/slide7.svg");
   @include background-full;
 }
 
 .theme-slide8:is(.slide-background) {
-  background-image: url("/_extensions/roboticslab-slides/assets/backgrounds/slide8.svg");
+  background-image: url("#{$rl-template-assets-path}/slide8.svg");
   @include background-full;
 }
 
